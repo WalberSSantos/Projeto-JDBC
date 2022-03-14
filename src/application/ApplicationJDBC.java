@@ -2,15 +2,19 @@ package application;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import model.entities.Department;
 
 public class ApplicationJDBC extends Application {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        Department obj = new Department(1, "Books");
+        System.out.println(obj);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // TODO Auto-generated method stub
+        Department obj = new Department(1, "Books");
+        System.out.println(obj);
         
     }
 }
